@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-bg-app: #edf4ff;
+  --color-bg-accent-a: rgba(88, 126, 255, 0.2);
+  --color-bg-accent-b: rgba(58, 195, 255, 0.2);
+  --color-surface: rgba(255, 255, 255, 0.62);
+  --color-surface-soft: rgba(255, 255, 255, 0.45);
+  --color-border: rgba(255, 255, 255, 0.7);
+  --color-text-primary: #15304b;
+  --color-text-secondary: #35506a;
+  --color-text-muted: #5f7a95;
+  --color-primary: #3874ff;
+  --color-primary-hover: #2b5bd0;
+  --color-success: #1e8e61;
+  --color-success-soft: rgba(32, 162, 109, 0.16);
+  --color-danger: #bd3349;
+  --color-danger-soft: rgba(189, 51, 73, 0.16);
+  --color-overlay: rgba(21, 48, 75, 0.35);
+  --shadow-card: 0 10px 30px rgba(25, 56, 93, 0.12);
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg-app);
+  color: var(--color-text-primary);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background-image:
+    radial-gradient(circle at 10% 10%, var(--color-bg-accent-a), transparent 30%),
+    radial-gradient(circle at 90% 20%, var(--color-bg-accent-b), transparent 35%);
+  background-attachment: fixed;
+}
+
+.app-bg {
+  background-color: var(--color-bg-app);
+}
+
+.app-surface {
+  background-color: var(--color-surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.app-surface-soft {
+  background-color: var(--color-surface-soft);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.app-border {
+  border-color: var(--color-border);
+}
+
+.app-text-primary {
+  color: var(--color-text-primary);
+}
+
+.app-text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.app-text-muted {
+  color: var(--color-text-muted);
+}
+
+.app-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.app-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.app-glass-highlight {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.15));
+}
+
+.app-bubble-a {
+  background-color: var(--color-bg-accent-a);
+}
+
+.app-bubble-b {
+  background-color: var(--color-bg-accent-b);
+}
+
+.app-success-soft {
+  background-color: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.app-danger-soft {
+  background-color: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+
+.app-overlay {
+  background-color: var(--color-overlay);
+}
