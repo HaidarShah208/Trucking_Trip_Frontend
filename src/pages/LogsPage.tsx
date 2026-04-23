@@ -5,8 +5,8 @@ import { Button } from "../components/common/Button";
 import { Card } from "../components/common/Card";
 import { EmptyState } from "../components/common/EmptyState";
 import { Loader } from "../components/common/Loader";
-import { LogsCarousel } from "../components/logs/LogsCarousel";
 import { useGetTripLogsQuery } from "../services/tripApi";
+import { LogsCarousel } from "../components/logs/LogsCarousel";
 
 export const LogsPage = () => {
   const { id = "" } = useParams();
