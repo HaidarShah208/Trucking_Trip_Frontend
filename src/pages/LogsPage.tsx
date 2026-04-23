@@ -6,7 +6,6 @@ import { Card } from "../components/common/Card";
 import { EmptyState } from "../components/common/EmptyState";
 import { Loader } from "../components/common/Loader";
 import { useGetTripLogsQuery } from "../services/tripApi";
-import { LogsCarousel } from "../components/logs/LogsCarousel";
 
 export const LogsPage = () => {
   const { id = "" } = useParams();
@@ -58,7 +57,7 @@ export const LogsPage = () => {
           )}
         </Button>
       </Card>
-      <LogsCarousel logs={data} />
+      {/* <LogsCarousel logs={data} /> */}
     </div>
   );
 };
